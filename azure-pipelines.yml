@@ -25,9 +25,8 @@ steps:
     displayName: 'Use Python $(python.version)'
  
   - script:|
-
 python -m pip install --upgrade pip 
- pip install -r requirements.txt
+pip install -r requirements.txt
 displayName: 'Install dependencies'
 
  
@@ -53,7 +52,7 @@ displayName: 'Install dependencies'
 
  
 
-  - script: |
+  - script:|
       pip install pytest pytest-azurepipelines 
 
       pytest 
